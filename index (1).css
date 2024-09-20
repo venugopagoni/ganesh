@@ -108,3 +108,39 @@ footer {
     background-color: #ff7043;
     color: white;
 }
+.sponsor-list img{
+    width: 400px;
+    height: 400px;
+    border-color: black;
+    border-radius: 10px;
+    border-style: double;
+}
+header ul li{
+    display: flex;
+    list-style-type: none;
+}
+.oneN{
+    display: flex;
+    justify-content:space-between ;
+}
+.one ul li{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+.two ul li{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+.three ul li{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+.header img{
+    margin-left: 500px;
+}
