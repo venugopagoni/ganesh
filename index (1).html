@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Immersion</title>
+    <link rel="stylesheet" href="C:\Users\Venu\OneDrive\Desktop\New folder\ganesh.css">
+</head>
+<body>
+    <header>
+        <h1>Ganesh Immersion 2024</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#ganesh-images">Ganesh Pictures</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+        </ul>
+    </nav>
+
+    <section id="ganesh-images">
+        <h2>Ganesh Pictures</h2>
+        <div class="image-gallery">
+            <img src="/WhatsApp Image 2024-09-20 at 6.39.32 PM (1).jpeg" alt="Ganesh Image 1" class="blast-image">
+            <img src="/WhatsApp Image 2024-09-20 at 6.39.31 PM.jpeg" alt="Ganesh Image 2" class="blast-image">
+            <img src="/WhatsApp Image 2024-09-20 at 6.39.32 PM (2).jpeg" alt="Ganesh Image 3" class="blast-image">
+            <img src="/WhatsApp Image 2024-09-20 at 6.39.32 PM copy.jpeg" alt="Ganesh Image 4" class="blast-image">
+            <img src="/WhatsApp Image 2024-09-20 at 6.57.14 PM (3).jpeg" alt="Ganesh Image 5" class="blast-image">
+            <img src="/WhatsApp Image 2024-09-20 at 6.39.32 PM (2).jpeg" alt="Ganesh Image 6" class="blast-image">
+            <img src="/WhatsApp Image 2024-09-20 at 6.57.14 PM (3).jpeg" alt="Ganesh Image 7" class="blast-image">
+            <img src="/WhatsApp Image 2024-09-20 at 6.57.14 PM.jpeg" alt="Ganesh Image 8" class="blast-image">
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <h2>Our Sponsors</h2>
+        <ul class="sponsor-list">
+            <li>Sponsor 1</li>
+            <img src="C:\Users\Venu\OneDrive\Desktop\New folder\WhatsApp Image 2024-09-20 at 6.39.31 PM.jpeg" alt="Ganesh Image 1" class="blast-image">
+
+            <li>Sponsor 2</li>
+            <img src="C:\Users\Venu\OneDrive\Desktop\New folder\WhatsApp Image 2024-09-20 at 6.39.31 PM.jpeg" alt="Ganesh Image 1" class="blast-image">
+
+            <li>Sponsor 3</li>
+            <img src="C:\Users\Venu\OneDrive\Desktop\New folder\WhatsApp Image 2024-09-20 at 6.39.31 PM.jpeg" alt="Ganesh Image 1" class="blast-image">
+
+            <li>Sponsor 4</li>
+            <img src="C:\Users\Venu\OneDrive\Desktop\New folder\WhatsApp Image 2024-09-20 at 6.39.31 PM.jpeg" alt="Ganesh Image 1" class="blast-image">
+
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ganesh Immersion Event</p>
+    </footer>
+
+    <!-- JavaScript for blasting effect -->
+    <script>
+        document.querySelectorAll('.blast-image').forEach(image => {
+            image.addEventListener('click', function () {
+                this.classList.add('blasted');
+                setTimeout(() => {
+                    this.classList.remove('blasted');
+                }, 1000);  // Remove blast effect after 1 second
+            });
+        });
+    </script>
+</body>
+</html>

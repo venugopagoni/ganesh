@@ -1,0 +1,110 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #ff7043;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #ff7043;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#ganesh-images {
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    overflow-x: auto; /* Makes the gallery scrollable */
+    gap: 20px;
+    padding: 20px;
+    white-space: nowrap; /* Ensures all images are on one line */
+}
+
+.image-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ff7043;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Blasting effect */
+.blasted {
+    animation: blast 1s ease;
+}
+
+@keyframes blast {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5) rotate(20deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0.8) rotate(-20deg);
+        opacity: 1;
+    }
+}
+
+#sponsors {
+    background-color: #ffe0b2;
+    padding: 20px;
+    text-align: center;
+}
+
+.sponsor-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sponsor-list li {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff7043;
+    color: white;
+}
